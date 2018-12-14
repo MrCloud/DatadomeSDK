@@ -1,0 +1,4 @@
+framework module DataDomeSDK {
+  header "DataDomeSDK-Swift.h"
+  requires objc
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DataDomeSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DataDomeSDK.'
+  s.version          = '1.0.0'
+  s.summary          = 'An easy captcha integration SDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  An easy captcha integration SDK blablah
+                         DESC
 
-  s.homepage         = 'https://github.com/Florian PETIT/DataDomeSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/MrCloud/DataDomeSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Florian PETIT' => 'florianp37@me.com' }
-  s.source           = { :git => 'https://github.com/Florian PETIT/DataDomeSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'MrCloud' => 'florianp37@me.com' }
+  s.source           = { :git => 'https://github.com/MrCloud/DataDomeSDK.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DataDomeSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DataDomeSDK' => ['DataDomeSDK/Assets/*.png']
-  # }
+  s.source = { :http => 'https://package.datadome.co/ios/DataDome-SDK-1.0.0.zip' }
+  s.dependency 'Alamofire'
+  s.preserve_paths      = 'DataDomeSDK.framework'
+  s.vendored_frameworks = 'DataDomeSDK.framework'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

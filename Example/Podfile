@@ -1,6 +1,0 @@
-use_frameworks!
-target 'DataDomeSDK_Tests' do
-  pod 'DataDomeSDK', :path => '../'
-  
-  
-end
