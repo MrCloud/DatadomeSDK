@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DataDomeSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'An easy captcha integration SDK.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source = { :http => 'https://package.datadome.co/ios/DataDome-SDK-1.0.0.zip' }
+  s.source = { :http => 'https://package.datadome.co/ios/DataDome-SDK-1.1.0.zip' }
   s.dependency 'Alamofire'
   s.preserve_paths      = 'DataDomeSDK.framework'
   s.vendored_frameworks = 'DataDomeSDK.framework'
